@@ -1,0 +1,444 @@
+html,body{
+    margin:0;
+    padding:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%;
+}
+
+body{
+    background-color: #F1F5FB;
+    color:rgb(24,24,24);
+}
+
+/*table-------------------------*/
+table{
+    width: 100%;
+    table-layout:auto;
+    text-align: center;
+    padding: 10px;
+}
+td,th{
+    padding: 8px;
+    border-radius: 8px;
+    border: #fff solid 3px;
+}
+
+tr th{
+    font-size: large;
+    background-color: rgb(226,233,244);
+}
+tr:hover{
+    background-color: rgb(245, 246, 249);
+}
+
+button, input, textarea,select{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input,textarea,select{
+    border: rgb(191,193,199) solid 2px;
+    border-radius: 8px;
+    height: 20px;
+    color:dimgray;
+    background-color: rgba(0,0,0,0);
+}
+ul,li{
+    list-style: none;
+    padding-left:0;
+}
+
+h1{
+    margin: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+
+#initialdisplay{
+    margin: 50px 80px;
+}
+
+#inith2{
+    margin: 20px;
+}
+#initp{
+    margin: 5px 20px;
+    color:dimgray;
+    font-size: 1.1rem;
+}
+#createCompany, #accountingbtn{
+    width: 100px;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #181818;
+    color: #fff;
+}
+#createCompany:hover, #accountingbtn:hover{
+    background-color: #393939;
+    color: #fff;
+}
+#createCompany:active, #accountingbtn:active{
+    background-color: #181818;
+    padding: 5px;
+    width: 95px;
+    color: #fff;
+}
+
+a {
+    text-decoration:none;
+    color: rgb(24,24,24);
+}
+
+.icon{
+    height: 25px;
+    margin: -5px 10px;
+}
+
+/*header------------------------------*/
+header{
+    z-index: -1;
+    position: fixed;
+    display: flex;
+    width: 100%;
+}
+
+header h3{
+    position: absolute;
+    left: 310px;
+    font-size: 40px;
+    margin: 25px;
+}
+/*side--------------------------------*/
+.sideMenu{
+    width:230px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+}
+
+nav button{
+    text-align: left;
+    padding: 15px;
+    color:dimgray;
+    font-size:large;
+    width: 90%;
+    background-color: rgba(0,0,0,0);
+    border-radius: 8px;
+    border: none;
+    margin: 10px;
+}
+nav button:hover{
+    background-color: #181818;
+    color: #fff;
+}
+nav button:hover .icon{
+    filter: invert(100%);
+}
+
+#UserArea{
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+}
+#Userimg{
+    height: 65px;
+    width: 65px;
+    border-radius:999em;
+    box-shadow: 1px 1px 3px 0 rgba(0,0,0,.2);
+}
+
+#time{
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    font-weight: 600;
+    color:#181818;
+    /*background-color: #181818;*/
+    border: #181818 solid 2px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    width:150px;
+    text-align:center;
+}
+#time:hover{
+    color:#fff;
+    background-color: #181818;
+}
+
+.userimg{
+    height: 50px;
+}
+
+/*section-------------------------*/
+section{
+    position: absolute;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.5);
+    border-radius: 5px;
+    background-color: #fff;
+    top:15%;
+    right: 8%;
+    width: 70%;
+    height: 81%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*accounting---------------------*/
+#accountImg{
+    height:50px;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+}
+
+#add{
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    background-color:rgba(0,0,0,0);
+    border:none;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(24,24,24);
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 5px;
+    font-size: medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    /* 定位 */
+    position: absolute;
+    right:65px;
+    bottom: 12px;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+#dashboardHeader{
+    padding:10px 0;
+    margin: 10px;
+}
+
+.numRows{
+    width: 20%;
+    float:left;
+}
+
+.tb_search{
+    width: 20%;
+    float:right;
+}
+
+
+#createCompanyForm{
+    margin: 20px auto;
+    width: 80%;
+}
+
+#createCompanyForm form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#createCompanyForm input{
+    padding: 8px;
+}
+#createCompanyForm label{
+    font-size: large;
+    margin: 5px;
+}
+
+#companyArea{
+    position: absolute;
+    top:11%;
+    right:4%;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.5);
+    width: 73%;
+    height: 80%;
+    border-radius: 5px;
+    overflow: auto;
+    border: #181818 solid 2px;
+    padding: 10px;
+}
+
+#storeCompanybtn{
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: #181818;
+    color: #fff;
+    font-size: larger;
+    margin: 50px auto;
+}
+#storeCompanybtn:hover{
+    background-color: #393939;
+}
+
+#storeCompanybtn:active{
+    background-color: #181818;
+    height: 35px;
+    width: 140px;
+}
+
+#productAddbtn,#materialAddbtn,#employeeAddbtn{
+    width: 60px;
+    height: 30px;
+    border-radius: 8px;
+    border: solid 2px dimgray;
+    background-color: #fff;
+    color:#393939;
+    margin:0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#productAddbtn:hover,#materialAddbtn:hover,#employeeAddbtn:hover,#deleteBtn:hover{
+    background-color: #181818;
+    color: #fff;
+    border: solid 2px #fff;
+}
+
+form div table input{
+    border: none;
+    outline: none;
+}
+
+form div table tr{
+    background-color: rgb(245, 246, 249);
+}
+form div table tr:hover{
+    background-color: rgb(245, 246, 249);
+}
+
+form div table textarea{
+    border: none;
+    outline: none;
+}
+#deleteBtn, .companybtn{
+    width: 60px;
+    height: 30px;
+    border-radius: 8px;
+    border: solid 2px dimgray;
+    background-color: #fff;
+    color:#393939;
+}
+
+.companybtn:hover{
+    background-color: #181818;
+    color: #fff;
+    border: solid 2px #fff;
+}
+.companybtn:active{
+    width: 55px;
+    height: 25px;
+    font-size:small;
+}
+
+#accountTable{
+    text-align: left;
+    font-size: large;
+    padding: 30px;
+}
+
+#accountTable tr{
+    height: 60px;
+}
+
+#accountTable select, 
+#accountTable input, 
+#accountTable textarea{
+    height: 100%;
+    padding: 10px;
+    font-size:medium;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#accountTable textarea{
+    width: 80%;
+}
+
+.accountTableLabel{
+    background-color:rgb(226,233,244);
+    width: 20%;
+}
+
+#saveAccountBtn{
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: #181818;
+    color: #fff;
+    font-size: larger;
+    margin: 0 auto;
+}
+
+#Amount{
+    margin: 0 13px;
+    font-size:large;
+}
+
+#companyTable{
+    text-align: left;
+}
+
+.companyTableLabel{
+    width: 30%;
+}
+
+#companyTable tr:nth-child(even){
+    background-color: rgb(234, 234, 234);
+}
+#companyTable tr:nth-child(odd){
+    background-color: rgb(199, 199, 199);
+}
+
+#li13 .intertable tr th,
+#li15 .intertable tr th{
+    background-color:rgb(234, 234, 234);
+    border-bottom:#393939 solid 2px;
+    border-left: rgba(0,0,0,0);
+    border-right: rgba(0,0,0,0);
+    border-top: rgba(0,0,0,0);
+    border-radius: 0%;
+}
+#li14 .intertable tr th{
+    background-color: rgb(199, 199, 199);
+    border-bottom:#393939 solid 2px;
+    border-left: rgba(0,0,0,0);
+    border-right: rgba(0,0,0,0);
+    border-top: rgba(0,0,0,0);
+    border-radius: 0%;
+}
+#li13 .intertable td,
+#li15 .intertable td{
+    border:rgba(0,0,0,0);
+    background-color:rgb(234, 234, 234);
+}
+#li14 .intertable td{
+    border:rgba(0,0,0,0);
+    background-color: rgb(199, 199, 199);
+}
+
+.sort::after{
+    content: " ⇅";
+}
+.sort:hover{
+    color: #fff;
+    background-color: #181818;
+}
+
